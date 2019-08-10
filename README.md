@@ -10,8 +10,8 @@
 2) Transform 
    * For the historical weather data, the five weather variables (temperature, humidity, pressure, wind_speed, wind_direction) are retrieved only in year 2013 and then averaged daily; the sixth variable “weather description” is string, so we select the most frequent weather_description by day. 
    * For the flight data, we clean up the csv table by only keeping JFK airport information; then filtering columns by only keeping delayed flights (>0) based on the departure delays ("dep_delay") and arrival delays ("arr_delay"); at last the daily total number of delayed flights are transformed into dataframe.
-   The above two tabled are joined together, so far the first project goal is met.
-   * For the weather forecast, we build query URL by using API key to get weather forecast from OpenWeatherMap website, the request list is transformed into dataframe. The second project goal is met.
+   The above two tabled are joined together and saved to sqlite, so far the first project goal is met.
+   * For the weather forecast, we build query URL by using API key to get weather forecast from OpenWeatherMap website, the request list is transformed into dataframe and saved to sqlite. The second project goal is met.
 
 3) Load
 The final tables include:
