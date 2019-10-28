@@ -1,6 +1,11 @@
 # ETL project: weather hindcast and forecast influence flights in JFK
 
-## Project goal: In this project, we are reporting weather data for the JFK airport1) To review how weather conditions influence the delays of the departure and arrival flights in 2013;2) To inspect the following 5-day weather forecast from today so that they can predict the air traffics. ## ETL process:
+## Project goal: 
+In this project, we are reporting weather data for the JFK airport
+1) To review how weather conditions influence the delays of the departure and arrival flights in 2013;
+2) To inspect the following 5-day weather forecast from today so that they can predict the air traffics. 
+
+## ETL process:
 1) Extract
    Jupiter Notebook is used to extract data from the following data source:
    * The historical weather datasets are from Kaggle (https://www.kaggle.com/selfishgene/historical-hourly-weather-data/version/2). The dataset contains 5 years of hourly measurements data of six weather attributes (temperature, humidity, air pressure, wind direction, wind speed, weather description) for 30 U.S. and Canadian Cities.
@@ -15,6 +20,10 @@
 
 3) Load
 The final tables include:
- * NewYork_JFKflight_Delay_2013.csv, which is created from ETL_HistoricalData.ipynb and used to show the relation of the delayed flights in New York JFK airport and the weather conditions in 2013.
- * NewYork_WeatherForecast.csv, which is created from ETL_5DayForecast.ipynb and used to show the future 5 days weather forecast in every three hours, in order to help the JFK airport manage the air traffic.## Limitations
+ * NewYork_JFKflight_Delay_2013, which is created from ETL_HistoricalData.ipynb and used to show the relation of the delayed flights in New York JFK airport and the weather conditions in 2013.
+ * NewYork_WeatherForecast, which is created from ETL_5DayForecast.ipynb and used to show the future 5 days weather forecast in every three hours, in order to help the JFK airport manage the air traffic.
+
+## Limitations
 The historical flight data is only available in 2013 in Kaggle, which really limits us to draw the conclusion that how the delayed flights are related to the weather conditions. 
+
+### Created by Shuwen Zhang, Julia Nalyvaiko, Rajinder Gill
